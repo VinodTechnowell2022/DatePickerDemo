@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatePickerScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:id="@+id/llStartDt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:weightSum="10">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="7"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_gravity="center"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etStartDt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="19-12-2022"
+                    android:clickable="true"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:maxLength="10"
+                    android:textSize="@dimen/_13sdp"
+                    android:hint="Start Date"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:id="@+id/ivStartDt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:src="@drawable/calander_icon"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEndDt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="7"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_gravity="center"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="@dimen/_8sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_8sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_8sdp"
+                app:boxCornerRadiusTopStart="@dimen/_8sdp"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etEndDt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="19-12-2022"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:maxLength="10"
+                    android:textSize="@dimen/_13sdp"
+                    android:hint="End Date"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:id="@+id/ivEndDt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <ImageView
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:src="@drawable/calander_icon"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
